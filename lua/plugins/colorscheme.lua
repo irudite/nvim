@@ -1,20 +1,22 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "ellisonleao/gruvbox.nvim",
+  lazy = true,
   priority = 1000,
   config = true,
   opts = function()
     return {
-      transparent = false,
-      compile = false,
-      terminalColors = true,
-      undercurl = true,
-      keywordStyle = { italic = true },
-      statementStyle = { bold = true },
+      transparent_mode = true,
+      contrast = "soft",
+      bold = true,
+      italic = {
+        strings = true,
+        emphasis = true,
+        comments = true,
+        operators = false,
+        folds = true,
+      },
+      invert_tabline = false,
+      invert_signs = false,
     }
   end,
-  theme = "dragon", -- Load "wave" theme when 'background' option is not set
-  background = { -- map the value of 'background' option to a theme
-    dark = "dragon", -- try "dragon" !
-    light = "lotus",
-  },
 }
