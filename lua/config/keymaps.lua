@@ -9,8 +9,6 @@ local opts = { noremap = true, silent = true }
 -- view file tree
 -- floating window
 keymap.set("n", "<Leader>vf", ":Neotree float<cr>", { desc = "[V]iew [F]iles" })
--- fixed sidebar
-keymap.set("n", "<Leader>sv", ":Neotree focus<cr>", { desc = "Toggle sidebar file browser" })
 
 -- select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
@@ -21,6 +19,8 @@ keymap.set({ "n", "v" }, "L", "$", { desc = "Move cursor to end of line" })
 
 -- tabs
 keymap.set("n", "<Leader><tab>", ":tabnew<Return>", opts)
+
+--tab movement
 keymap.set("n", "<right>", ":tabnext<Return>", opts)
 keymap.set("n", "<left>", ":tabprev<Return>", opts)
 
