@@ -1,11 +1,11 @@
 return {
-  "folke/tokyonight.nvim",
+  "ellisonleao/gruvbox.nvim",
   lazy = true,
   priority = 1000,
   config = true,
   opts = function()
     return {
-      transparent = false,
+      transparent_mode = true,
       contrast = "soft",
       bold = true,
       italic = {
