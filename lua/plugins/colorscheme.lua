@@ -1,12 +1,12 @@
 return {
-  "morhetz/gruvbox.nvim",
+  "ellisonleao/gruvbox.nvim",
   lazy = true,
   priority = 1000,
   config = true,
   opts = function()
     return {
       transparent_mode = true,
-      contrast = "medium",
+      contrast = "hard",
       bold = true,
       italic = {
         strings = true,
