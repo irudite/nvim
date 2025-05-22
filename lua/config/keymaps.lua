@@ -26,6 +26,7 @@ keymap.set("n", "<left>", ":tabprev<Return>", opts)
 
 -- split window
 keymap.set("n", "ss", ":vsplit<Return>", opts)
+keymap.set("n", "sv", ":split<Return>", opts)
 
 -- move window
 keymap.set("n", "sh", "<C-w>h")
@@ -34,7 +35,7 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sk", "<C-w>k")
 
 -- resize window
-keymap.set("n", "<C-w><right>", "<C-w>>")
-keymap.set("n", "<C-w><left>", "<C-w><")
+keymap.set("n", "<C-w><right>", "<C-w><")
+keymap.set("n", "<C-w><left>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
